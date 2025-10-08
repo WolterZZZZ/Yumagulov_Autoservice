@@ -27,6 +27,11 @@ namespace Yumagulov_Autoservice
         public string DurationInSeconds { get; set; }
         public decimal Cost { get; set; }
         public double Discount { get; set; }
+        public int DiscountInt { get
+            {
+                return (int)(Discount * 100);
+            }
+        }
         public string Description { get; set; }
     
       
